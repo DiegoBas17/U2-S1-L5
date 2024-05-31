@@ -204,16 +204,6 @@ h4 {
     color: black;
 }
 /* animazione della barraNav */
-@property --hue {
-    syntax: '<angle>';
-    initial-value: 0turn;
-    inherits: false;
-  }
-  
-  @keyframes hue-cycle { to {
-    --hue: 1turn;
-  }}
-body {
-  animation: hue-cycle 1s linear both;
-  animation-timeline: scroll();
+.barraNav.scrolled {
+    background-color: white
 }
