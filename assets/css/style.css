@@ -176,4 +176,44 @@ h4 {
     border-radius: 45px;
 
 }
+/* aside della discovery */
+.containerAside {
+    width: 35%;
+}
+.containerLinkA {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.containerA {
+    width: 32%;
+    background-color: #F2F2F2;
+    border-radius: 50px;
+    text-align: center;
+}
+.containerA a {
+    text-decoration: none;
+    color: black;
+}
+.containerLink {
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerLink a {
+    text-decoration: none;
+    color: black;
+}
 /* animazione della barraNav */
+@property --hue {
+    syntax: '<angle>';
+    initial-value: 0turn;
+    inherits: false;
+  }
+  
+  @keyframes hue-cycle { to {
+    --hue: 1turn;
+  }}
+body {
+  animation: hue-cycle 1s linear both;
+  animation-timeline: scroll();
+}
